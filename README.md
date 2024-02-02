@@ -15,13 +15,13 @@ spring.datasource.password=password
    cd Credit-Finance-Institution-Handbook
    ```
 ### 4. Build and run .
-   ```
-	mvn package
-   ```
-	 ```
-	 cd target
-	 ```
-	 ```
-	 java -jar library-management-1.0-SNAPSHOT.war
-	 ```
-   Now, you should be able to access the application at localhost:8080.
+```
+mvn package
+```
+```
+cd target
+```
+```	
+ java -jar library-management-1.0-SNAPSHOT.war 
+```
+ Now, you should be able to access the application at localhost:8080.
