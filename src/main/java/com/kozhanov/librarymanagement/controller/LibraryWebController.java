@@ -37,6 +37,11 @@ public class LibraryWebController {
         return "takeBook";
     }
 
+    @GetMapping("/q")
+    public String show() {
+        return "index.html";
+    }
+
     @PostMapping("/borrowedBooks/save")
     public String saveBorrowedBook(@ModelAttribute BorrowedBookDto borrowedBookDto, RedirectAttributes redirectAttributes) {
         Optional<Book> book = bookService.findByTitle(borrowedBookDto.getBookTitle());
